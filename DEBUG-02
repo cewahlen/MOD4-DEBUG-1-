@@ -3,15 +3,15 @@ start
         string name
         num hours
         num rate
- *      NUM GROSS
- *      NUM NET
+ *      num gross
+ *      num net
  *      CONSTANT string DEDUCTION = 45
  *      CONSTANT string EOFNAME = "ZZZ"
    
     output "Enter first name or ", EOFNAME, " to quit"
     input name
    
-*   WHILE name <> to EOFNAME
+*   while name <> to EOFNAME
         output "Enter hours worked for ", name
         input hours
      
@@ -21,15 +21,15 @@ start
         gross = hours * rate
         net = gross - DEDUCTION
       
-   *    IF net > 0 then
+   *    if net > 0 then
           output "Net pay for ", name, " is ", net
         else
           output "Deductions not covered. Net is 0."
-  *     endIF
+  *     endif
       
         output "Enter next name or ", EOFNAME, " to quit"
         input name
- *   endWHILE
+ *   endwhile
      
      output "End of job"
 stop
