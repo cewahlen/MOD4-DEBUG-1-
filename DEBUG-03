@@ -6,14 +6,14 @@ start
         num PASSING = 60
   
     output "Enter first score or 0 to quit "
-*   INPUT FIRSTTEST
+*   input firstTest
 
 *   while firstTest <> 0
         output "Enter second score "
         input secondTest
 
  *      average = (firstTest + secondTest) / 2
- *      ouTput "Average is ", average
+ *      output "Average is ", average
         
         if average >= PASSING then
             output "Pass"
@@ -22,6 +22,6 @@ start
     endif
 
         output "Enter first score or 0 to quit "
- *      INPUT FIRSTTEST
+ *      input firstTest
      endwhile
 stop
